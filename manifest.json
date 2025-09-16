@@ -1,0 +1,21 @@
+{
+  "name": "KeukenKampioen winkelmodus",
+  "short_name": "KeukenKampioen",
+  "start_url": "https://www.keukenkampioen.nl/winkelmodus",
+  "scope": "https://www.keukenkampioen.nl/winkelmodus",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#da2128",
+  "icons": [
+    {
+      "src": "/icons/android-chrome-192x192.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/apple-touch-icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
