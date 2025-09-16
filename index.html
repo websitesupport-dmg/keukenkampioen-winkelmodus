@@ -7,7 +7,21 @@
     <link rel="manifest" href="manifest.json">
 </head>
 <body>
-    <h1>Welcome to Keukenkampioen Winkelmodus</h1>
-    <p>This is a sample page for the Keukenkampioen winkelmodus PWA.</p>
+    <h1>Keukenkampioen Winkelmodus</h1>
+    <p>De winkelmodus wordt over <span id="seconds"></span> gestart.</p>
+    <script>
+        let countdown = 10;
+        const secondsElement = document.getElementById('seconds');
+        secondsElement.textContent = countdown;
+
+        const interval = setInterval(() => {
+            countdown--;
+            secondsElement.textContent = countdown;
+            if (countdown <= 0) {
+                clearInterval(interval);
+                window.location.href = "https://www.keukenkampioen.nl/winkelmodus";
+            }
+        }, 1000);
+    </script>
 </body>
 </html>
